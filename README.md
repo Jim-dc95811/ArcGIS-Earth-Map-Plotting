@@ -1,8 +1,16 @@
 # ArcGIS Earth Offline Maps & Field Tracking
 
-## Download the tools
+## Get everything you need
 
-### **⬇️ [DOWNLOAD ARCGIS TPKX BATCH FACTORY](downloads/TPKX_Batch_Factory_v1.zip)**
+**1. ⬇️ [ArcGIS Earth](https://www.esri.com/en-us/arcgis/products/arcgis-earth/downloads)** - free 3D globe from Esri (Windows desktop version); it shows the maps and the tracker.
+
+**2. ⬇️ [ArcGIS Pro 3.7](https://esri.com/en-us/arcgis/products/arcgis-pro/trial)** - Esri's licensed desktop GIS (21-day free trial). Batch Factory only.
+
+**3. ⬇️ [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)** - free from Microsoft; the Batch Factory installer uses it. Batch Factory only.
+
+**4. ⬇️ [Python 3](https://www.python.org/downloads/windows/)** - free; install with the default options. Then open Command Prompt and type `py -3 -m pip install pyserial`. Tracker and tester only.
+
+### **⬇️ [5. DOWNLOAD ARCGIS TPKX BATCH FACTORY](downloads/TPKX_Batch_Factory_v1.zip)**
 **📖 [User manual](docs/TPKX_BATCH_FACTORY.md)** ([PDF](docs/TPKX_Batch_Factory_User_Guide.pdf))
 
 ArcGIS Pro add-in that turns controlled extents into Satellite, Road Overlay, or Both TPKX packages at Z16-Z20. The extents come from the [Master 4 Grid Maker](https://github.com/Jim-dc95811/QGIS-Mbtile-to-ArcGIS-Earth-TPKX/blob/main/MASTER4_GRID_MAKER.md).
@@ -11,7 +19,7 @@ ArcGIS Pro add-in that turns controlled extents into Satellite, Road Overlay, or
 
 *The Batch Factory inside ArcGIS Pro: pick the map product, maximum zoom and destination, paste up to 10 extents, then BUILD BATCH.*
 
-### **⬇️ [DOWNLOAD PRAVE / ME TRACKER v1.2](downloads/PRAVE_ME_Tracker_v1.zip)**
+### **⬇️ [6. DOWNLOAD PRAVE / ME TRACKER v1.2](downloads/PRAVE_ME_Tracker_v1.zip)**
 **📖 [User manual](docs/PRAVE_ME_TRACKER.md)**
 
 Track ME and remote PRAVE units directly in ArcGIS Earth through the local Automation API. v1.1 fixed the launchers and keeps units on the map through a serial reconnect; v1.2 keeps a Windows proxy setting from blocking the connection to ArcGIS Earth ([changes](docs/PRAVE_ME_TRACKER_V1.1_CHANGES.md)).
@@ -20,7 +28,7 @@ Track ME and remote PRAVE units directly in ArcGIS Earth through the local Autom
 
 *ME (blue marker) and remote unit 1-173 drawn live in ArcGIS Earth. ▶️ [Watch the video](https://www.youtube.com/watch?v=JKWJmEIBP_I) (YouTube).*
 
-### **⬇️ [DOWNLOAD PRAVE / RMC FIELD DECODER TESTER v1.0 GOLD](downloads/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.zip)**
+### **⬇️ [7. DOWNLOAD PRAVE / RMC FIELD DECODER TESTER v1.0 GOLD](downloads/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.zip)**
 **📖 [User manual (PDF)](docs/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold_Instructions.pdf)**
 
 Bench-test the tracker without a radio: a simulated Raveon RMC/PRAVE stream with six units covering every RSSI icon ([bench-test guide](docs/PRAVE_ME_TRACKER.md#bench-testing-without-a-radio)).
