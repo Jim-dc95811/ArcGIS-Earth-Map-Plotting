@@ -98,3 +98,18 @@ Also checked:
 | `PRAVE_ME_Tracker_v1.zip` (as published with v1.1) | `43ef8146bb3f4a6a23daa44b4d4a31e410de97eb7c31136078b114015f79f32d` |
 
 v1.0 `PRAVE_ME_Tracker.py` SHA-256 for reference: `dca19a7e9a835f9ce4f94ab724a6e986f3d237b67fd133f6927694644ca2a0dd`. v1.0 remains available in the repository history.
+
+## v1.2.1 - launcher update (2026-11-02)
+
+`PRAVE_ME_Tracker.py` is unchanged (v1.2). Only `START_TRACKER.bat` changed: it finds Python through `py -3`, or `python` when the `py` launcher is not installed; installs `pyserial` once if it is missing (or prints the command to give to IT if the install fails); then starts the tracker as before. `SELF_TEST.bat` is unchanged.
+
+The same launcher logic was added to Jim's **PRAVE / RMC Field Decoder Tester v1.0 Gold** (`Run_PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.bat`, with Jim's approval). The tester program and its PDF are unchanged.
+
+Both live-tested by Jim Gaddy on Windows, 2026-11-02.
+
+| File | SHA-256 |
+|---|---|
+| `START_TRACKER.bat` (v1.2.1) | `ba558a091bb1c0b1ee47726db7a4ccbae66510eded1b6b69b3b0198ff6c1cb43` |
+| `PRAVE_ME_Tracker_v1.zip` (v1.2.1) | `81a722ccc270ceecdd825d2fbce6b38ddd063f04b81b822f00d1be9daa7b0ef1` |
+| `Run_PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.bat` (2026-11-02) | `1c760c4e69f491eba50c21a46fe330900358565823481f21ced5971df676f993` |
+| `PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.zip` (2026-11-02) | `68c369c9ae453c557c0f7119993064fb350933cc3663f126d73e675cf43c4fb1` |

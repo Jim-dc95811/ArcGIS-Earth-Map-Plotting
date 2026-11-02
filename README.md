@@ -8,7 +8,7 @@
 
 **3. ⬇️ [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)** - free from Microsoft; the Batch Factory installer uses it. Batch Factory only.
 
-**4. ⬇️ [Python 3](https://www.python.org/downloads/windows/)** - free; install with the default options. Then open Command Prompt and type `py -3 -m pip install pyserial`. Tracker and tester only.
+**4. ⬇️ [Python 3](https://www.python.org/downloads/windows/)** - free; install with the default options. The tracker and tester need one add-on, pyserial, which their launchers **install automatically** the first time (needs internet once). Tracker and tester only.
 
 ### **⬇️ [5. DOWNLOAD ARCGIS TPKX BATCH FACTORY](downloads/TPKX_Batch_Factory_v1.zip)**
 **📖 [User manual](docs/TPKX_BATCH_FACTORY.md)** ([PDF](docs/TPKX_Batch_Factory_User_Guide.pdf))
@@ -19,10 +19,10 @@ ArcGIS Pro add-in that turns controlled extents into Satellite, Road Overlay, or
 
 *The Batch Factory inside ArcGIS Pro: pick the map product, maximum zoom and destination, paste up to 10 extents, then BUILD BATCH.*
 
-### **⬇️ [6. DOWNLOAD PRAVE / ME TRACKER v1.2](downloads/PRAVE_ME_Tracker_v1.zip)**
+### **⬇️ [6. DOWNLOAD PRAVE / ME TRACKER v1.2.1](downloads/PRAVE_ME_Tracker_v1.zip)**
 **📖 [User manual](docs/PRAVE_ME_TRACKER.md)**
 
-Track ME and remote PRAVE units directly in ArcGIS Earth through the local Automation API. v1.1 fixed the launchers and keeps units on the map through a serial reconnect; v1.2 keeps a Windows proxy setting from blocking the connection to ArcGIS Earth ([changes](docs/PRAVE_ME_TRACKER_V1.1_CHANGES.md)).
+Track ME and remote PRAVE units directly in ArcGIS Earth through the local Automation API. v1.1 fixed the launchers and keeps units on the map through a serial reconnect; v1.2 keeps a Windows proxy setting from blocking the connection to ArcGIS Earth; v1.2.1's launcher installs pyserial by itself ([changes](docs/PRAVE_ME_TRACKER_V1.1_CHANGES.md)).
 
 [![PRAVE / ME tracker in ArcGIS Earth: the ME marker and remote unit 1-173 drawn live over satellite imagery](images/prave_me_tracker_arcgis_earth.jpg)](https://www.youtube.com/watch?v=JKWJmEIBP_I)
 
@@ -149,7 +149,7 @@ Project-tested behavior is described as such; it should not be read as a guarant
 - Windows
 - ArcGIS Earth desktop
 - ArcGIS Earth Automation API enabled
-- Python 3 + `pyserial`
+- Python 3 + `pyserial` (installed automatically by `START_TRACKER.bat` the first time)
 - RMC/PRAVE serial source
 
 ## Offline does not mean unlicensed

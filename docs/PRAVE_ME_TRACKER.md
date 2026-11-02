@@ -1,6 +1,6 @@
 # PRAVE / ME Tracker Guide
 
-**Current version: v1.2** (2026-10-31). See [PRAVE_ME_TRACKER_V1.1_CHANGES.md](PRAVE_ME_TRACKER_V1.1_CHANGES.md) for what changed in v1.1 and v1.2.
+**Current version: v1.2.1** (2026-11-02: launcher installs pyserial automatically; program unchanged from v1.2 of 2026-10-31). See [PRAVE_ME_TRACKER_V1.1_CHANGES.md](PRAVE_ME_TRACKER_V1.1_CHANGES.md) for what changed in v1.1 and v1.2.
 
 The PRAVE / ME Tracker replaces the older KML/NetworkLink display path with direct ArcGIS Earth Automation API control.
 
@@ -23,7 +23,7 @@ The tracker reads ArcGIS Earth's current camera, replaces only the camera X/Y wi
 - ArcGIS Earth desktop
 - ArcGIS Earth Automation API enabled
 - Python 3
-- `pyserial` - install once from a Command Prompt with `py -m pip install pyserial`
+- `pyserial` - `START_TRACKER.bat` installs it automatically the first time (v1.2.1; internet needed once). By hand: `py -3 -m pip install pyserial`
 - Mixed Raveon RMC/PRAVE serial input
 
 ## ArcGIS Earth setup
@@ -60,7 +60,7 @@ The **PRAVE / RMC Field Decoder Tester v1.0 Gold** generates the same mixed seri
 - `$PRAVE` reports at random 1.5-3.5 second intervals from six units, 7-101 to 7-106, arranged in a small grid around ME;
 - one unit per RSSI state, so every icon can be checked at once: 7-101 blank (unknown icon), then 7-102 to 7-106 at -115, -105, -95, -85 and -75 dBm (1 to 5 bars).
 
-**Download:** [`PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.zip`](../downloads/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.zip). It contains the tester program, its Windows launcher and the PDF instructions. It needs Python 3 and `pyserial`, like the tracker.
+**Download:** [`PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.zip`](../downloads/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.zip). It contains the tester program, its Windows launcher and the PDF instructions. It needs Python 3 and `pyserial`, like the tracker; since 2026-11-02 its launcher also installs `pyserial` automatically the first time. The tester program itself is Jim's unmodified v1.0 Gold.
 
 ### Connecting tester and tracker
 
@@ -108,4 +108,4 @@ Logs are written to the `Logs` folder beside the tracker. Useful entries:
 - `GPS_NO_FIX` / `GPS_FIX_RESTORED` - the GPS lost and regained its fix.
 - `ICON_WARNING` - the icon folder or an icon file is missing.
 - `RECONNECT` - the serial link dropped; the tracker is waiting 5 seconds before trying again.
-- `ERROR pyserial is not installed` - run `py -m pip install pyserial`.
+- `ERROR pyserial is not installed` or `pyserial could not be installed automatically` - run `py -3 -m pip install pyserial`, or ask IT if your network blocks downloads.
