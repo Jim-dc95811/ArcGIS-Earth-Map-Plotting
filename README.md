@@ -10,6 +10,11 @@
 
 **4. ⬇️ [Python 3](https://www.python.org/downloads/windows/)** - free; install with the default options. The tracker and tester need one add-on, pyserial, which their launchers **install automatically** the first time (needs internet once). Tracker and tester only.
 
+> **First time? Three quick tips**
+> 1. **Extract the zip first:** right-click the downloaded zip > **Extract All**, then open the new folder. Double-clicking files while they are still inside the zip does not work.
+> 2. **Windows security warning:** Windows may warn about any program downloaded from the internet. Click **More info > Run anyway** (blue "Windows protected your PC" screen) or **Run**. To avoid the warning, right-click the zip > **Properties** > tick **Unblock** > **OK** before extracting.
+> 3. **Installing Python:** if the installer shows **"Add python.exe to PATH"**, tick it.
+
 ### **⬇️ [5. DOWNLOAD ARCGIS TPKX BATCH FACTORY](downloads/TPKX_Batch_Factory_v1.zip)**
 **📖 [User manual](docs/TPKX_BATCH_FACTORY.md)** ([PDF](docs/TPKX_Batch_Factory_User_Guide.pdf))
 
