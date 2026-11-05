@@ -33,6 +33,10 @@ Steps:
 
 If the build fails, a message names the problem (for example ".NET build tools were not found." or "ArcGIS Pro SDK build target was not found.") and the details are written to `BUILD_LOG.txt` beside `BUILD_INSTALL.bat`. Nothing is installed after a failed build.
 
+## What's in the zip
+
+![What's in the TPKX Batch Factory folder: BUILD_INSTALL.bat builds and installs the add-in with ArcGIS Pro open, the Factory folder holds its parts, and Open Factory appears on the Add-In tab](../images/tpkx_batch_factory_whats_in_the_zip.png)
+
 ## Open the Factory
 
 Open any ArcGIS Pro project, go to the **Add-In** tab and click **Open Factory**. The **ArcGIS TPKX Batch Factory** window opens; it can be moved and resized and stays open while you work.

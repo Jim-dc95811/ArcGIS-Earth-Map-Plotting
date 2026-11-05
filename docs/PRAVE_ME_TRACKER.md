@@ -33,6 +33,10 @@ The tracker reads ArcGIS Earth's current camera, replaces only the camera X/Y wi
 3. Enable **Automation API**.
 4. Leave the default local endpoint at `http://localhost:8000` unless you intentionally changed it.
 
+## What's in the zip
+
+![What's in the PRAVE / ME Tracker folder: START_TRACKER.bat starts it, SELF_TEST.bat checks it, and the COM port setting is at the top of PRAVE_ME_Tracker.py](../images/prave_me_tracker_whats_in_the_zip.png)
+
 ## Tracker setup
 
 1. Download [`PRAVE_ME_Tracker_v1.zip`](../downloads/PRAVE_ME_Tracker_v1.zip) and extract it. Open `PRAVE_ME_Tracker.py` from the extracted `PRAVE_ME_Tracker` folder in Notepad (right-click > Edit).

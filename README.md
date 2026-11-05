@@ -17,6 +17,7 @@
 
 ### **⬇️ [5. DOWNLOAD ARCGIS TPKX BATCH FACTORY](downloads/TPKX_Batch_Factory_v1.zip)**
 **📖 [User manual](docs/TPKX_BATCH_FACTORY.md)** ([PDF](docs/TPKX_Batch_Factory_User_Guide.pdf))
+**🗂️ [What's in the zip - every file explained](images/tpkx_batch_factory_whats_in_the_zip_full.png)**
 
 ArcGIS Pro add-in that turns controlled extents into Satellite, Road Overlay, or Both TPKX packages at Z16-Z20. The extents come from the [Master 4 Grid Maker](https://github.com/Jim-dc95811/QGIS-Mbtile-to-ArcGIS-Earth-TPKX/blob/main/MASTER4_GRID_MAKER.md).
 
@@ -26,6 +27,7 @@ ArcGIS Pro add-in that turns controlled extents into Satellite, Road Overlay, or
 
 ### **⬇️ [6. DOWNLOAD PRAVE / ME TRACKER v1.2.1](downloads/PRAVE_ME_Tracker_v1.zip)**
 **📖 [User manual](docs/PRAVE_ME_TRACKER.md)**
+**🗂️ [What's in the zip - every file explained](images/prave_me_tracker_whats_in_the_zip_full.png)**
 
 Track ME and remote PRAVE units directly in ArcGIS Earth through the local Automation API. v1.1 fixed the launchers and keeps units on the map through a serial reconnect; v1.2 keeps a Windows proxy setting from blocking the connection to ArcGIS Earth; v1.2.1's launcher installs pyserial by itself ([changes](docs/PRAVE_ME_TRACKER_V1.1_CHANGES.md)).
 
@@ -35,6 +37,7 @@ Track ME and remote PRAVE units directly in ArcGIS Earth through the local Autom
 
 ### **⬇️ [7. DOWNLOAD PRAVE / RMC FIELD DECODER TESTER v1.0 GOLD](downloads/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.zip)**
 **📖 [User manual (PDF)](docs/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold_Instructions.pdf)**
+**🗂️ [What's in the zip - every file explained](images/prave_rmc_tester_whats_in_the_zip_full.png)**
 
 Bench-test the tracker without a radio: a simulated Raveon RMC/PRAVE stream with six units covering every RSSI icon ([bench-test guide](docs/PRAVE_ME_TRACKER.md#bench-testing-without-a-radio)).
 
