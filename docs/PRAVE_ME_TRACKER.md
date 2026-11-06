@@ -1,6 +1,6 @@
 # PRAVE / ME Tracker Guide
 
-**Current version: v1.2.1** (2026-11-02: launcher installs pyserial automatically; program unchanged from v1.2 of 2026-10-31). See [PRAVE_ME_TRACKER_V1.1_CHANGES.md](PRAVE_ME_TRACKER_V1.1_CHANGES.md) for what changed in v1.1 and v1.2.
+**Current version: v1.2.2** (2026-11-06: one obvious file - the zip holds `START_TRACKER.bat` and `System Files`; program unchanged from v1.2 of 2026-10-31. v1.2.1, 2026-11-02: launcher installs pyserial automatically). See [PRAVE_ME_TRACKER_V1.1_CHANGES.md](PRAVE_ME_TRACKER_V1.1_CHANGES.md) for what changed in v1.1 and v1.2.
 
 The PRAVE / ME Tracker replaces the older KML/NetworkLink display path with direct ArcGIS Earth Automation API control.
 
@@ -35,13 +35,13 @@ The tracker reads ArcGIS Earth's current camera, replaces only the camera X/Y wi
 
 ## What's in the zip
 
-![What's in the PRAVE / ME Tracker folder: START_TRACKER.bat starts it, SELF_TEST.bat checks it, and the COM port setting is at the top of PRAVE_ME_Tracker.py](../images/prave_me_tracker_whats_in_the_zip.png)
+![What's in the PRAVE / ME Tracker folder: START_TRACKER.bat starts it, System Files holds the program (its COM port setting is at the top of PRAVE_ME_Tracker.py) and the Logs folder](../images/prave_me_tracker_whats_in_the_zip.png)
 
 ## Tracker setup
 
-1. Download [`PRAVE_ME_Tracker_v1.zip`](../downloads/PRAVE_ME_Tracker_v1.zip) and extract it. Open `PRAVE_ME_Tracker.py` from the extracted `PRAVE_ME_Tracker` folder in Notepad (right-click > Edit).
+1. Download [`PRAVE_ME_Tracker_v1.zip`](../downloads/PRAVE_ME_Tracker_v1.zip) and extract it. Open the extracted `PRAVE_ME_Tracker_v1.2.2` folder, then `System Files`, and open `PRAVE_ME_Tracker.py` in Notepad (right-click > Edit).
 2. Change only `INPUT_PORT` (default `COM12`) and, if necessary, `INPUT_BAUD` (default `19200`) above the `HERE BE DRAGONS` line. Save the file. If your RSSI icons live somewhere other than `C:\MyData\PRAVE_ME\Icons`, also set `ICON_FOLDER`.
-3. Run `SELF_TEST.bat`. It checks the decoder without a radio or ArcGIS Earth.
+3. Optional check without a radio or ArcGIS Earth: in a Command Prompt in `System Files`, run `py PRAVE_ME_Tracker.py --self-test`.
 4. Open ArcGIS Earth, connect the radio or test source, and run `START_TRACKER.bat`. The console shows status and unit counts; when the tracker stops, it prints its exit code and waits for a key press.
 
 ## RSSI icons
@@ -81,8 +81,8 @@ Keep both at 19200 baud.
 
 ### Running a bench test
 
-1. Run the tester self-test from a Command Prompt in the tester's folder: `py PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.py --self-test` (or `python ...` if the `py` launcher is not installed). It should report 7 valid sentences.
-2. Run the tracker's `SELF_TEST.bat`.
+1. Run the tester self-test from a Command Prompt in the tester's `System Files` folder: `py PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.py --self-test` (or `python ...` if the `py` launcher is not installed). It should report 7 valid sentences.
+2. Run the tracker's self-test the same way: `py PRAVE_ME_Tracker.py --self-test` in the tracker's `System Files`.
 3. Open ArcGIS Earth with the Automation API enabled.
 4. Start the tracker with `START_TRACKER.bat`, then start the tester with `Run_PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.bat`. (The tester's launcher calls `python`, so Python must be on the PATH: tick "Add python.exe to PATH" when installing Python.)
 5. Within about 10-20 seconds, ME and all six trucks should appear, each with its own RSSI icon.
@@ -105,7 +105,7 @@ If the serial link drops (USB cable pulled, radio power blip), the tracker keeps
 
 ## Log messages
 
-Logs are written to the `Logs` folder beside the tracker. Useful entries:
+Logs are written to the `Logs` folder beside the program - since v1.2.2 that is inside `System Files`. Useful entries:
 
 - `API_BAD` - ArcGIS Earth did not accept an update; check that it is running with the Automation API enabled. (From v1.2 a Windows proxy setting can no longer cause this.)
 - `RMC_BAD` / `PRAVE_BAD` - a sentence failed its checksum or field checks.

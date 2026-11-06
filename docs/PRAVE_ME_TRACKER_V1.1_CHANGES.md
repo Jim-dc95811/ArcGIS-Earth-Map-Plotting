@@ -99,6 +99,10 @@ Also checked:
 
 v1.0 `PRAVE_ME_Tracker.py` SHA-256 for reference: `dca19a7e9a835f9ce4f94ab724a6e986f3d237b67fd133f6927694644ca2a0dd`. v1.0 remains available in the repository history.
 
+## v1.2.2 - one obvious file (2026-11-06)
+
+Jim's packaging rule: one .bat to double-click, everything else in a system folder. `PRAVE_ME_Tracker_v1.zip` (same download name) now holds a `PRAVE_ME_Tracker_v1.2.2` folder with `START_TRACKER.bat` and `System Files\PRAVE_ME_Tracker.py`. `SELF_TEST.bat` is gone (the self-test is `py PRAVE_ME_Tracker.py --self-test` in System Files). The program is byte-identical to v1.2 (`f1f0d868...`); because it keeps its `Logs` folder and `AE_PRAVE_previous_units.json` beside itself, those now appear inside System Files. Jim's **PRAVE / RMC Field Decoder Tester v1.0 Gold** got the same layout (his program and instructions PDF untouched, inside System Files; its log also lands there). Zips: tracker `81c1d2aafc03687894f2bff605732119007c82acac5e58e0f9d260324afe70f2`, tester `001cf4a33d8a44c66aab38e91674cb4231339c2ab6ecbc637411362e02d35493`.
+
 ## v1.2.1 - launcher update (2026-11-02)
 
 `PRAVE_ME_Tracker.py` is unchanged (v1.2). Only `START_TRACKER.bat` changed: it finds Python through `py -3`, or `python` when the `py` launcher is not installed; installs `pyserial` once if it is missing (or prints the command to give to IT if the install fails); then starts the tracker as before. `SELF_TEST.bat` is unchanged.
