@@ -1,5 +1,7 @@
 # ArcGIS Earth Offline Maps & Field Tracking
 
+> 🤖 **Using AI assistance?** Have the agent read the [CLAUDE.md](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/blob/main/CLAUDE.md) file first.
+
 ## Get everything you need
 
 **1. ⬇️ [ArcGIS Earth](https://www.esri.com/en-us/arcgis/products/arcgis-earth/downloads)** - free 3D globe from Esri (Windows desktop version); it shows the maps and the tracker.
