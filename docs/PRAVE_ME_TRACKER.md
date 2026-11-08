@@ -1,4 +1,4 @@
-# PRAVE / ME Tracker 2.0 Guide
+# PRAVE / ME Tracker 2.1 Guide
 
 <!-- install-blurb:start -->
 > ### Installing the PRAVE / ME Tracker - read this first
@@ -55,8 +55,9 @@ The tracker reads ArcGIS Earth's current camera, replaces only the camera X/Y wi
 
 ## Tracker setup
 
-1. Download [`PRAVE_ME_Tracker_v1.zip`](../downloads/PRAVE_ME_Tracker_v1.zip) and extract it. Open the extracted `PRAVE_ME_Tracker_v2.0` folder (the .bat, this guide as a PDF, and `System Files`), then `System Files`, and open `PRAVE_ME_Tracker.py` in Notepad (right-click > Edit).
-2. Change only `INPUT_PORT` (default `COM12`) and, if necessary, `INPUT_BAUD` (default `19200`) above the `HERE BE DRAGONS` line. Save the file. If your RSSI icons live somewhere other than `C:\MyData\PRAVE_ME\Icons`, also set `ICON_FOLDER`.
+1. Download [`PRAVE_ME_Tracker_v1.zip`](../downloads/PRAVE_ME_Tracker_v1.zip) and extract it. Open the extracted `PRAVE_ME_Tracker_v2.1` folder (the .bat, this guide as a PDF, and `System Files`), then `System Files`, and open `PRAVE_ME_Tracker.py` in Notepad (right-click > Edit).
+2. Change only `INPUT_PORT` (default `COM12`) and, if necessary, `INPUT_BAUD` (default `19200`) above the `HERE BE DRAGONS` line. Save the file. If your RSSI icons live somewhere other than `C:\MyData\PRAVE_ME\Icons`, also set `ICON_FOLDER`. Not sure which port? Just start the tracker: if the port is wrong it lists the serial ports this PC has (2.1).
+   `STALE_AFTER_MINUTES` (default `5`) sets when a quiet unit starts showing its age; `0` turns that off.
 3. Optional check without a radio or ArcGIS Earth: in a Command Prompt in `System Files`, run `py PRAVE_ME_Tracker.py --self-test`.
 4. Open ArcGIS Earth, connect the radio or test source, and run `START_TRACKER.bat`. The console shows status and unit counts; when the tracker stops, it prints its exit code and waits for a key press.
 
@@ -69,6 +70,8 @@ The six fire-truck PNGs are **not included** in the download. Place your own ico
 ME tracking starts enabled. Press **T** in the tracker console to toggle ME drawing replacement and camera recentering off/on.
 
 ## PRAVE drawing behavior
+
+**Quiet units show their age (2.1).** A unit not heard from for 5 minutes (`STALE_AFTER_MINUTES`) gets its age in its map label, for example `7-101 · 12 min` or `7-101 · 2 h 05 min`, updated once a minute. Its next report puts the plain label (`7-101`) back.
 
 The ArcGIS Earth Drawings API provides add/delete operations for the point drawing path used here, so fresh PRAVE reports replace the previous drawing. If an individual PRAVE unit is unchecked in ArcGIS Earth while the tracker is running, the next report can recreate it as visible. Stop the tracker to suspend all updates.
 
@@ -119,13 +122,20 @@ The tester writes every sentence it sends to `logs/` beside the program, about 8
 
 If the serial link drops (USB cable pulled, radio power blip), the tracker keeps running and retries every 5 seconds. Units stay on the map at their last reported positions while it reconnects. Drawings left over from an earlier session are cleared only when the tracker starts.
 
+**Each problem is said once (2.1).** A wrong or busy COM port, or ArcGIS Earth not answering, is written to the window and the log once; the tracker then keeps trying quietly and says when it connects.
+
+- **COM port not found:** `COM12 was not found. Serial ports on this PC: COM3, COM7. Plug in the radio cable, or set INPUT_PORT ...`
+- **COM port busy:** `COM12 is in use by another program (the PRAVE tester, another tracker or a terminal program) ...`
+- **ArcGIS Earth closed or restarted while tracking (2.1):** `ARCGIS_EARTH_LOST` once - radio reports keep being logged - then `ARCGIS_EARTH_BACK - redrew N unit(s) and ME` once. Every known unit and ME go straight back on the map at their last positions, without waiting for new reports.
+
 ## Log messages
 
-Logs are written to the `Logs` folder beside the program - since v1.2.2 that is inside `System Files`. Useful entries:
+Logs are written to the `Logs` folder beside the program - since v1.2.2 that is inside `System Files`. **Since 2.1 there is one set of files per day**, for example `AE_PRAVE_Live_Activity_2026-11-08.log`, `AE_PRAVE_Packet_History_2026-11-08.csv` and `AE_RMC_Position_History_2026-11-08.csv` (the GPS file grows about 13 MB a day). Delete old days as needed. Useful entries:
 
 - `API_BAD` - ArcGIS Earth did not accept an update; check that it is running with the Automation API enabled. (From v1.2 a Windows proxy setting can no longer cause this.)
 - `RMC_BAD` / `PRAVE_BAD` - a sentence failed its checksum or field checks.
 - `GPS_NO_FIX` / `GPS_FIX_RESTORED` - the GPS lost and regained its fix.
 - `ICON_WARNING` - the icon folder or an icon file is missing.
-- `RECONNECT` - the serial link dropped; the tracker is waiting 5 seconds before trying again.
+- `RECONNECT` - the serial link dropped or the port is not there; the tracker tries every 5 seconds, quietly until something changes.
+- `ARCGIS_EARTH_LOST` / `ARCGIS_EARTH_BACK` - ArcGIS Earth stopped answering / answers again (units and ME redrawn).
 - `ERROR pyserial is not installed` or `pyserial could not be installed automatically` - run `py -3 -m pip install pyserial`, or ask IT if your network blocks downloads.
