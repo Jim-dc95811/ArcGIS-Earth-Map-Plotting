@@ -1,4 +1,4 @@
-# PRAVE / ME Tracker Guide
+# PRAVE / ME Tracker 2.0 Guide
 
 <!-- install-blurb:start -->
 > ### Installing the PRAVE / ME Tracker - read this first
@@ -55,7 +55,7 @@ The tracker reads ArcGIS Earth's current camera, replaces only the camera X/Y wi
 
 ## Tracker setup
 
-1. Download [`PRAVE_ME_Tracker_v1.zip`](../downloads/PRAVE_ME_Tracker_v1.zip) and extract it. Open the extracted `PRAVE_ME_Tracker_v1.2.3` folder (the .bat, this guide as a PDF, and `System Files`), then `System Files`, and open `PRAVE_ME_Tracker.py` in Notepad (right-click > Edit).
+1. Download [`PRAVE_ME_Tracker_v1.zip`](../downloads/PRAVE_ME_Tracker_v1.zip) and extract it. Open the extracted `PRAVE_ME_Tracker_v2.0` folder (the .bat, this guide as a PDF, and `System Files`), then `System Files`, and open `PRAVE_ME_Tracker.py` in Notepad (right-click > Edit).
 2. Change only `INPUT_PORT` (default `COM12`) and, if necessary, `INPUT_BAUD` (default `19200`) above the `HERE BE DRAGONS` line. Save the file. If your RSSI icons live somewhere other than `C:\MyData\PRAVE_ME\Icons`, also set `ICON_FOLDER`.
 3. Optional check without a radio or ArcGIS Earth: in a Command Prompt in `System Files`, run `py PRAVE_ME_Tracker.py --self-test`.
 4. Open ArcGIS Earth, connect the radio or test source, and run `START_TRACKER.bat`. The console shows status and unit counts; when the tracker stops, it prints its exit code and waits for a key press.

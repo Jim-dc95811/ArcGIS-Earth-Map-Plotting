@@ -1,4 +1,4 @@
-# ArcGIS TPKX Batch Factory
+# ArcGIS TPKX Batch Factory 2.0
 
 <!-- install-blurb:start -->
 > ### Installing the Batch Factory - read this first
@@ -38,7 +38,7 @@ You need:
 Steps:
 
 1. **Open ArcGIS Pro first** and leave it running.
-2. Download [`TPKX_Batch_Factory_v1.zip`](../downloads/TPKX_Batch_Factory_v1.zip) and extract it to a normal folder. You get a `TPKX_Batch_Factory_v1` folder holding just `BUILD_INSTALL.bat`, this guide as a PDF, and `System Files` (the add-in's parts - leave them alone).
+2. Download [`TPKX_Batch_Factory_v1.zip`](../downloads/TPKX_Batch_Factory_v1.zip) and extract it to a normal folder. You get a `TPKX_Batch_Factory_v2.0` folder holding just `BUILD_INSTALL.bat`, this guide as a PDF, and `System Files` (the add-in's parts - leave them alone).
 3. Double-click `BUILD_INSTALL.bat`. A small "Building ArcGIS TPKX Factory..." window appears.
 4. When it says **Build complete**, click OK. The ArcGIS Add-In Installation Utility opens: click **Install Add-In**.
 5. Restart ArcGIS Pro once. The Factory appears on the **Add-In** tab as **Open Factory** (group **TPKX Factory**).

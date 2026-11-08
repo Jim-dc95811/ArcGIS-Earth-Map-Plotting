@@ -17,7 +17,9 @@
 > 2. **Windows security warning:** Windows may warn about any program downloaded from the internet. Click **More info > Run anyway** (blue "Windows protected your PC" screen) or **Run**. To avoid the warning, right-click the zip > **Properties** > tick **Unblock** > **OK** before extracting.
 > 3. **Installing Python:** if the installer shows **"Add python.exe to PATH"**, tick it.
 
-### **⬇️ [5. DOWNLOAD ARCGIS TPKX BATCH FACTORY](downloads/TPKX_Batch_Factory_v1.zip)**
+> **2.0 (8 Nov 2026):** the whole ArcGIS Earth Unlocked family moved to 2.0 as one reference point ([2.0 Reference](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/blob/main/REFERENCE_2.0.md)). Batch Factory 2.0 and PRAVE / ME Tracker 2.0 are the same programs with the version text changed; the download names stay the same so old links keep working. The PRAVE / RMC tester stays *Gold*. Earlier zips are kept in [`archive/`](archive/).
+
+### **⬇️ [5. DOWNLOAD ARCGIS TPKX BATCH FACTORY v2.0](downloads/TPKX_Batch_Factory_v1.zip)**
 **📖 [User manual](docs/TPKX_BATCH_FACTORY.md)** ([PDF](docs/TPKX_Batch_Factory_User_Guide.pdf))
 **🗂️ [What's in the zip - every file explained](images/tpkx_batch_factory_whats_in_the_zip_full.png)**
 **📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools - all 10 in one zip](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
@@ -28,7 +30,7 @@ ArcGIS Pro add-in that turns controlled extents into Satellite, Road Overlay, or
 
 *The Batch Factory inside ArcGIS Pro: pick the map product, maximum zoom and destination, paste up to 10 extents, then BUILD BATCH.*
 
-### **⬇️ [6. DOWNLOAD PRAVE / ME TRACKER v1.2.3](downloads/PRAVE_ME_Tracker_v1.zip)**
+### **⬇️ [6. DOWNLOAD PRAVE / ME TRACKER v2.0](downloads/PRAVE_ME_Tracker_v1.zip)**
 **📖 [User manual](docs/PRAVE_ME_TRACKER.md)**
 **🗂️ [What's in the zip - every file explained](images/prave_me_tracker_whats_in_the_zip_full.png)**
 **📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools - all 10 in one zip](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
