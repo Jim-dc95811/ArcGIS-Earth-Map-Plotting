@@ -1,6 +1,22 @@
 # PRAVE / ME Tracker Guide
 
-**Current version: v1.2.2** (2026-11-06: one obvious file - the zip holds `START_TRACKER.bat` and `System Files`; program unchanged from v1.2 of 2026-10-31. v1.2.1, 2026-11-02: launcher installs pyserial automatically). See [PRAVE_ME_TRACKER_V1.1_CHANGES.md](PRAVE_ME_TRACKER_V1.1_CHANGES.md) for what changed in v1.1 and v1.2.
+<!-- install-blurb:start -->
+> ### Installing the PRAVE / ME Tracker - read this first
+>
+> 1. **Extract All first:** right-click the downloaded zip > **Extract All**, then open the new folder. (Double-clicking files while they are still inside the zip does not work.)
+> 2. **Double-click `START_TRACKER.bat`** - the only .bat in the folder. This manual sits right next to it. The **System Files** folder holds the program - leave it alone.
+> 3. **Blue "Windows protected your PC" box?** Click **More info**, then **Run anyway**. It only asks the first time. (Or, before extracting: right-click the zip > **Properties** > tick **Unblock** > **OK**.)
+> 4. **Python - nothing to install by hand.** If Python is missing, the window asks **Install Python now? [Y/N]**: type **Y** and press Enter. It installs just for you (no admin needed) - and the pyserial library too. On an older PC this can take several minutes and Windows Defender may make the PC look frozen - **do not close the window**.
+> 5. Install **ArcGIS Earth** (free from Esri: https://www.esri.com/en-us/arcgis/products/arcgis-earth/downloads). The .bat starts it for you and checks its Automation API is on (Settings > Advanced application settings > tick **Enable Automation API**).
+> 6. The serial port settings (`INPUT_PORT`, default COM12, and `INPUT_BAUD`) are at the top of `System Files\PRAVE_ME_Tracker.py`.
+>
+> Something stops it? The window says what to do in plain words, and keeps a log in `System Files\Ready_To_Fly_log.txt`. On a work computer that blocks installs, ask IT to install Python 3 from python.org.
+<!-- install-blurb:end -->
+
+A printable copy of this guide is available as [PRAVE_ME_Tracker_User_Guide.pdf](PRAVE_ME_Tracker_User_Guide.pdf).
+
+
+**Current version: v1.2.3** (2026-11-08: Ready to Fly launcher - installs Python and pyserial if missing, starts ArcGIS Earth and checks its API. 2026-11-06: one obvious file - the zip holds `START_TRACKER.bat` and `System Files`; program unchanged from v1.2 of 2026-10-31. v1.2.1, 2026-11-02: launcher installs pyserial automatically). See [PRAVE_ME_TRACKER_V1.1_CHANGES.md](PRAVE_ME_TRACKER_V1.1_CHANGES.md) for what changed in v1.1 and v1.2.
 
 The PRAVE / ME Tracker replaces the older KML/NetworkLink display path with direct ArcGIS Earth Automation API control.
 
@@ -39,7 +55,7 @@ The tracker reads ArcGIS Earth's current camera, replaces only the camera X/Y wi
 
 ## Tracker setup
 
-1. Download [`PRAVE_ME_Tracker_v1.zip`](../downloads/PRAVE_ME_Tracker_v1.zip) and extract it. Open the extracted `PRAVE_ME_Tracker_v1.2.2` folder, then `System Files`, and open `PRAVE_ME_Tracker.py` in Notepad (right-click > Edit).
+1. Download [`PRAVE_ME_Tracker_v1.zip`](../downloads/PRAVE_ME_Tracker_v1.zip) and extract it. Open the extracted `PRAVE_ME_Tracker_v1.2.3` folder (the .bat, this guide as a PDF, and `System Files`), then `System Files`, and open `PRAVE_ME_Tracker.py` in Notepad (right-click > Edit).
 2. Change only `INPUT_PORT` (default `COM12`) and, if necessary, `INPUT_BAUD` (default `19200`) above the `HERE BE DRAGONS` line. Save the file. If your RSSI icons live somewhere other than `C:\MyData\PRAVE_ME\Icons`, also set `ICON_FOLDER`.
 3. Optional check without a radio or ArcGIS Earth: in a Command Prompt in `System Files`, run `py PRAVE_ME_Tracker.py --self-test`.
 4. Open ArcGIS Earth, connect the radio or test source, and run `START_TRACKER.bat`. The console shows status and unit counts; when the tracker stops, it prints its exit code and waits for a key press.

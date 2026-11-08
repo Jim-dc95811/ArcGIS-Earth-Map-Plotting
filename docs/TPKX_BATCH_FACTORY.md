@@ -1,5 +1,17 @@
 # ArcGIS TPKX Batch Factory
 
+<!-- install-blurb:start -->
+> ### Installing the Batch Factory - read this first
+>
+> 1. **Extract All first:** right-click the downloaded zip > **Extract All**, then open the new folder. (Double-clicking files while they are still inside the zip does not work.)
+> 2. You need **ArcGIS Pro 3.7** (installed and licensed) and the free **Microsoft .NET 10 SDK** (https://dotnet.microsoft.com/en-us/download/dotnet/10.0). No Python needed.
+> 3. **Open ArcGIS Pro first** and leave it running, then **double-click `BUILD_INSTALL.bat`** - the only .bat in the folder. This manual sits right next to it; the **System Files** folder holds the add-in's parts - leave it alone.
+> 4. **Blue "Windows protected your PC" box?** Click **More info**, then **Run anyway**.
+> 5. When it says **Build complete**, click **OK**, then **Install Add-In**. Restart ArcGIS Pro once: the Factory is on the **Add-In** tab as **Open Factory**.
+>
+> Something stops it? The message names the problem, and the details are in `System Files\BUILD_LOG.txt`. Full steps: *Install the add-in* below.
+<!-- install-blurb:end -->
+
 A printable copy of this guide is available as [TPKX_Batch_Factory_User_Guide.pdf](TPKX_Batch_Factory_User_Guide.pdf).
 
 The Batch Factory is an ArcGIS Pro add-in that turns controlled **EPSG:3857 extents** into offline TPKX packages using ArcGIS Pro's native tile-cache export path.
@@ -26,7 +38,7 @@ You need:
 Steps:
 
 1. **Open ArcGIS Pro first** and leave it running.
-2. Download [`TPKX_Batch_Factory_v1.zip`](../downloads/TPKX_Batch_Factory_v1.zip) and extract it to a normal folder. You get a `TPKX_Batch_Factory_v1` folder holding just `BUILD_INSTALL.bat` and `System Files` (the add-in's parts - leave them alone).
+2. Download [`TPKX_Batch_Factory_v1.zip`](../downloads/TPKX_Batch_Factory_v1.zip) and extract it to a normal folder. You get a `TPKX_Batch_Factory_v1` folder holding just `BUILD_INSTALL.bat`, this guide as a PDF, and `System Files` (the add-in's parts - leave them alone).
 3. Double-click `BUILD_INSTALL.bat`. A small "Building ArcGIS TPKX Factory..." window appears.
 4. When it says **Build complete**, click OK. The ArcGIS Add-In Installation Utility opens: click **Install Add-In**.
 5. Restart ArcGIS Pro once. The Factory appears on the **Add-In** tab as **Open Factory** (group **TPKX Factory**).
