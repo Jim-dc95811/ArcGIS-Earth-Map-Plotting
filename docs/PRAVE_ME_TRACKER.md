@@ -22,7 +22,7 @@ The tracker reads ArcGIS Earth's current camera, replaces only the camera X/Y wi
 - Windows 10/11
 - ArcGIS Earth desktop
 - ArcGIS Earth Automation API enabled
-- Python 3
+- Python 3 and pyserial - since 1.2.3 `START_TRACKER.bat` installs both for you if they are missing (answer **Y**; no admin needed), and starts ArcGIS Earth if it is not open
 - `pyserial` - `START_TRACKER.bat` installs it automatically the first time (v1.2.1; internet needed once). By hand: `py -3 -m pip install pyserial`
 - Mixed Raveon RMC/PRAVE serial input
 
