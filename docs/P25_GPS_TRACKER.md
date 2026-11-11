@@ -2,6 +2,8 @@
 
 Live GPS from BK P25 radios, plotted as named units on your own offline ArcGIS Earth maps. Free and open — no cloud, no vendor server, no BK dongle. The tracker only ever **reads** the radio.
 
+> 🔒 **For IT / security review:** [P25 GPS Tracker — Security Summary (PDF)](P25_GPS_Tracker_Security_Summary.pdf) — a plain-language, cyber-audit-style write-up: exactly what it does, every network call, dependencies (standard library only), file hashes, and how to run it in a managed environment.
+
 ![How a field radio's GPS reaches the map](../images/p25_gps_tracker_pictogram.png)
 
 ---

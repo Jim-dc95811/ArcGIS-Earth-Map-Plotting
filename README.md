@@ -10,6 +10,7 @@
 
 ### **⬇️ [DOWNLOAD P25 GPS TRACKER v0.4](downloads/P25_GPS_Tracker_v0.4.zip)**
 **📖 [Operator guide](docs/P25_GPS_TRACKER.md)**
+**🔒 [Security summary for IT (PDF)](docs/P25_GPS_Tracker_Security_Summary.pdf)**
 **📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
 
 - **One marker per unit, by name.** The sending radio's P25 unit ID is the key; name it once (`9076801 → Jax 24`) and it sticks across sessions. An un-named unit still shows its raw ID, so no dot is ever a mystery.
