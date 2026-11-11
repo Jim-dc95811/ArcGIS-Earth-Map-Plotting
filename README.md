@@ -2,6 +2,26 @@
 
 > 🤖 **Using AI assistance?** Have the agent read the [CLAUDE.md](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/blob/main/CLAUDE.md) file first.
 
+## 🛰️ NEW — P25 GPS Tracker: your radios' GPS, live on your offline map
+
+**The original Holy Grail, achieved.** Pull GPS straight out of your agency's BK P25 radios and plot each unit — by name — on your own offline ArcGIS Earth imagery. Free and open: no cloud, no vendor subscription, no BK dongle. The tracker only ever **reads** the radio; it never reprograms anything.
+
+![How a field radio's GPS reaches the map: BK portable, over the air, base M150 relay, your PC, then ArcGIS Earth, carrying a standard GNGGA position sentence and a proprietary PP25 unit-ID sentence](images/p25_gps_tracker_pictogram.png)
+
+### **⬇️ [DOWNLOAD P25 GPS TRACKER v0.4](downloads/P25_GPS_Tracker_v0.4.zip)**
+**📖 [Operator guide](docs/P25_GPS_TRACKER.md)**
+**📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
+
+- **One marker per unit, by name.** The sending radio's P25 unit ID is the key; name it once (`9076801 → Jax 24`) and it sticks across sessions. An un-named unit still shows its raw ID, so no dot is ever a mystery.
+- **Live-tested on real radios.** Two portables reporting through a base M150 relay plotted as two separate, named, correctly-separated units on offline imagery — pinpoint accurate.
+- **Built for the field.** Live / Stale / Expired aging (amber marker + age label), a pick-your-own retirement time (30 minutes to Never), keepalive + auto-reconnect, coordinate sanity, and a daily CSV track log.
+- **How it works:** the base radio, connected as a USB Ethernet/RNDIS gadget, relays each received fix as standard NMEA — a `$GNGGA` position plus a proprietary `$PP25` unit-ID sentence — which the tracker reads and draws through ArcGIS Earth's local Automation API. Nothing is decrypted; it is standard interoperability with your own equipment on your own licensed channels.
+
+> **The trifecta — ME + Raveon fleet + P25 on one map.** The same P25 feed also folds into the PRAVE / ME Tracker as a third source, so ME, the Raveon `$PRAVE` fleet, and the P25 radios share one map and one ArcGIS Earth API owner.
+> **⬇️ [Download PRAVE / ME / P25 Tracker v3.0](downloads/PRAVE_ME_Tracker_v3.0.zip)** — new bench build (passes its self-test and real-capture tests; full field test with live radios still pending). The standalone tracker above is the proven, everyday tool and the one most operators will use.
+
+---
+
 ## Get everything you need
 
 **1. ⬇️ [ArcGIS Earth](https://www.esri.com/en-us/arcgis/products/arcgis-earth/downloads)** - free 3D globe from Esri (Windows desktop version); it shows the maps and the tracker.
@@ -64,8 +84,9 @@ The project has moved well past a one-machine proof of concept. A **300+ GB dist
 
 | Tool | Job |
 |---|---|
+| **P25 GPS Tracker** | Reads GPS from BK P25 radios over the base radio's USB link and plots each unit, by name, directly in ArcGIS Earth. |
 | **ArcGIS TPKX Batch Factory** | ArcGIS Pro add-in that turns 1-10 controlled extents into Satellite, Road Overlay, or Both TPKX packages at Z16-Z20. |
-| **PRAVE / ME Tracker** | Reads mixed RMC/PRAVE serial data and draws/tracks ME and remote units directly in ArcGIS Earth through the local Automation API. |
+| **PRAVE / ME Tracker** | Reads mixed RMC/PRAVE serial data and draws/tracks ME and remote units directly in ArcGIS Earth through the local Automation API. A P25-integrated build — the [trifecta v3.0](downloads/PRAVE_ME_Tracker_v3.0.zip) (ME + Raveon fleet + P25 on one map) — is available as a new bench build. |
 | **PRAVE / RMC Field Decoder Tester** | Simulated radio stream for trying the tracker on the bench. |
 
 The production extents come from the **[Master 4 Grid Maker](https://github.com/Jim-dc95811/QGIS-Mbtile-to-ArcGIS-Earth-TPKX/blob/main/MASTER4_GRID_MAKER.md)**, which replaced the earlier TPKX Extent Tool.
@@ -130,6 +151,7 @@ flowchart LR
 
 ## Manuals
 
+- [P25 GPS Tracker - Operator Guide](docs/P25_GPS_TRACKER.md)
 - [ArcGIS TPKX Batch Factory - Operator Guide](docs/TPKX_BATCH_FACTORY.md)
 - [PRAVE / ME Tracker - Guide](docs/PRAVE_ME_TRACKER.md)
 - [PRAVE / RMC Field Decoder Tester - Instructions (PDF)](docs/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold_Instructions.pdf)
@@ -148,6 +170,7 @@ The Master 4 Grid Maker only makes extents; it does not download imagery. The Fa
 - TPKX opened from Android internal storage, microSD, and exFAT USB storage.
 - ArcGIS Earth desktop ME center-screen tracking through the local Automation API while preserving the operator's selected zoom.
 - PRAVE unit plotting with unit labels and RSSI-driven icon states.
+- P25 GPS from BK radios plotted as named units in ArcGIS Earth — live-tested with two portables reporting through a base M150 relay.
 
 Project-tested behavior is described as such; it should not be read as a guarantee for every Android OEM, ArcGIS version, storage device, or radio configuration.
 
@@ -159,6 +182,12 @@ Project-tested behavior is described as such; it should not be read as a guarant
 - .NET/ArcGIS Pro SDK build components used by the included installer
 - Internet access **during production** to retrieve the selected tile service
 - Sufficient local storage for high-detail TPKX output
+
+### P25 GPS Tracker
+- Windows
+- ArcGIS Earth desktop with the Automation API enabled
+- Python 3 (standard installer; Tk included; no extra libraries)
+- A BK base radio connected as the USB Ethernet/RNDIS gadget, with Base Station Relay feeding it received GPS
 
 ### PRAVE / ME Tracker
 - Windows
@@ -180,7 +209,7 @@ Third-party software, imagery, basemaps, trademarks, logos, user-interface eleme
 
 ## Human-AI engineering collaboration
 
-This toolchain was conceived, directed and field-tested by **Jim Gaddy**, working with **OpenAI's ChatGPT** and **Anthropic's Claude** as AI coding and documentation partners. Jim supplied the field problem, the radio and GPS hardware, the ArcGIS Pro builds and the live tests; the PRAVE / RMC Field Decoder Tester is Jim's own Gold bench tool. ChatGPT helped build the TPKX Batch Factory and the original PRAVE / ME Tracker. Claude built the tracker's 1.1, 1.2 and 1.2.1 releases (tested end to end against Jim's Gold tester and a mock ArcGIS Earth), the self-installing launchers, the user guides and PDFs, and the 'What's in the zip' sheets.
+This toolchain was conceived, directed and field-tested by **Jim Gaddy**, working with **OpenAI's ChatGPT** and **Anthropic's Claude** as AI coding and documentation partners. Jim supplied the field problem, the radio and GPS hardware, the ArcGIS Pro builds and the live tests; the PRAVE / RMC Field Decoder Tester is Jim's own Gold bench tool. ChatGPT helped build the TPKX Batch Factory and the original PRAVE / ME Tracker. Claude built the tracker's 1.1, 1.2 and 1.2.1 releases (tested end to end against Jim's Gold tester and a mock ArcGIS Earth), the self-installing launchers, the user guides and PDFs, and the 'What's in the zip' sheets. Claude also built the **P25 GPS Tracker** — reverse-engineered with Jim from his own radio captures (the relay turned out to be standard NMEA over the base radio's USB network link) and live-tested on his BK fleet.
 
 This acknowledgment is not a claim of OpenAI or Anthropic sponsorship or endorsement.
 
