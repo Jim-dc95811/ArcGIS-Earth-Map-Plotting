@@ -13,7 +13,7 @@
 *How a P25 radio's GPS reaches the map. ▶️ [Watch it work — BK Radio P25 GPS Map Plotter](https://www.youtube.com/watch?v=AapMfnJY7z0) (YouTube).*
 
 ### **⬇️ [DOWNLOAD P25 GPS TRACKER v0.4](downloads/P25_GPS_Tracker_v0.4.zip)**
-**▶️ [Watch the demo — BK Radio P25 GPS Map Plotter (YouTube)](https://www.youtube.com/watch?v=AapMfnJY7z0)**
+**▶️ [Watch the demo — BK Radio P25 GPS Map Plotter (YouTube)](https://www.youtube.com/watch?v=AapMfnJY7z0)** · **[60-sec Short](https://www.youtube.com/shorts/X2DJc22vsnw)**
 **📖 [Operator guide](docs/P25_GPS_TRACKER.md)**
 **🔒 [Security summary for IT (PDF)](docs/P25_GPS_Tracker_Security_Summary.pdf)**
 **📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
@@ -77,8 +77,9 @@ Load your TPKX maps into ArcGIS Earth, start a tracker here, and the units draw 
 
 | | |
 |---|---|
-| [![BK Radio P25 GPS Map Plotter](https://img.youtube.com/vi/AapMfnJY7z0/hqdefault.jpg)](https://www.youtube.com/watch?v=AapMfnJY7z0)<br>**BK Radio P25 GPS Map Plotter** — radio GPS live on the offline map | [![ArcGIS Earth Offline Georeferenced Chart Plotting](https://img.youtube.com/vi/JKWJmEIBP_I/hqdefault.jpg)](https://www.youtube.com/watch?v=JKWJmEIBP_I)<br>**ArcGIS Earth Offline Georeferenced Chart Plotting** |
-| [![Pre-Loaded Satellite Maps for First Responders](https://img.youtube.com/vi/xPA3QfAW4aY/hqdefault.jpg)](https://www.youtube.com/watch?v=xPA3QfAW4aY)<br>**Pre-Loaded Satellite Maps for First Responders** | [![Android Offline ArcGIS Earth](https://img.youtube.com/vi/uL69NTVnafE/hqdefault.jpg)](https://www.youtube.com/watch?v=uL69NTVnafE)<br>**Transforming an Android Phone into an ArcGIS Earth Map Viewer** |
+| [![BK Radio P25 GPS Map Plotter](https://img.youtube.com/vi/AapMfnJY7z0/hqdefault.jpg)](https://www.youtube.com/watch?v=AapMfnJY7z0)<br>**BK Radio P25 GPS Map Plotter** — radio GPS live on the offline map | [![Key a radio, watch it hit the map — live](https://img.youtube.com/vi/X2DJc22vsnw/hqdefault.jpg)](https://www.youtube.com/shorts/X2DJc22vsnw)<br>**Key a radio, watch it hit the map — live** (Short) |
+| [![ArcGIS Earth Offline Georeferenced Chart Plotting](https://img.youtube.com/vi/JKWJmEIBP_I/hqdefault.jpg)](https://www.youtube.com/watch?v=JKWJmEIBP_I)<br>**ArcGIS Earth Offline Georeferenced Chart Plotting** | [![Pre-Loaded Satellite Maps for First Responders](https://img.youtube.com/vi/xPA3QfAW4aY/hqdefault.jpg)](https://www.youtube.com/watch?v=xPA3QfAW4aY)<br>**Pre-Loaded Satellite Maps for First Responders** |
+| [![Android Offline ArcGIS Earth](https://img.youtube.com/vi/uL69NTVnafE/hqdefault.jpg)](https://www.youtube.com/watch?v=uL69NTVnafE)<br>**Transforming an Android Phone into an ArcGIS Earth Map Viewer** | |
 
 These short videos show ArcGIS Earth as an offline georeferenced chartplotter, why pre-loaded imagery matters when the network is gone, and how Android can become a dedicated offline ArcGIS Earth viewer.
 
