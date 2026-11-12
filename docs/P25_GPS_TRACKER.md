@@ -31,6 +31,14 @@ The tracker subscribes with one short request, reads the pair per fix, and draws
 
 Nothing is decrypted, no password is used, and the radio is never reprogrammed — this is standard interoperability with your own equipment on your own licensed channels.
 
+## Programming the BK radios (RES)
+
+The field radios and the base-station relay radio are set up in BK's RES programming software. The diagram below shows the settings that make the GPS relay work: the **field unit** (GPS triggered on PTT, Base Station Relay checked, a Destination ID) and the **base radio** (its Unit ID set to match that Destination ID). In this example the Destination ID is **2**, so the base radio's P25 ID is also set to **2** — the two must match.
+
+![RES programming settings for the field units (Global → Common, Zone → Channel Settings) and the base relay radio (System → Conventional System Unit ID), with the Destination ID / Unit ID set to match](../images/p25_radio_programming_res.png)
+
+*Field-unit and base-radio RES settings. The field unit's **Destination ID** and the base radio's **Unit ID** must be the same value.*
+
 ## Using it
 
 1. With ArcGIS Earth open (API on) and the base radio connected, open the app and click **Start tracking**. The camera flies to the first fix.
