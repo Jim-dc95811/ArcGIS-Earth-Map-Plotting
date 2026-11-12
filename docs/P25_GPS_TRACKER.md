@@ -10,7 +10,7 @@ Live GPS from BK P25 radios, plotted as named units on your own offline ArcGIS E
 
 ## Installing — read this first
 
-1. **Extract the zip** (right-click → **Extract All**), then open the new `P25_GPS_Tracker_v0.5` folder. Double-clicking files inside the zip does not work.
+1. **Extract the zip** (right-click → **Extract All**), then open the new `P25_GPS_Tracker_v0.6` folder. Double-clicking files inside the zip does not work.
 2. **Python 3** is required (the standard [python.org](https://www.python.org/downloads/windows/) installer, which includes Tk for the window). Tick **“Add python.exe to PATH”** during setup. No other libraries are needed.
 3. **Dependency — ArcGIS Earth with the Automation API on:** ArcGIS Earth → Settings → Advanced application settings → enable **Automation API** (the tracker uses `http://localhost:8000`).
 4. **Dependency — the base radio connected** as the USB **Ethernet/RNDIS Gadget** (it appears at `10.250.46.6`), with Base Station Relay feeding it received GPS.
@@ -41,7 +41,7 @@ The field radios and the base-station relay radio are set up in BK's RES program
 
 ## Using it
 
-1. With ArcGIS Earth open (API on) and the base radio connected, open the app and click **Start tracking**. The two lights at the top of the panel — **Radio connected** and **ArcGIS Earth API ready** — turn green when the link is healthy.
+1. With ArcGIS Earth open (API on) and the base radio connected, open the app. The two lights at the top — **Radio connected** and **ArcGIS Earth API ready** — go green on their own as soon as both are ready, *before* you press anything, so you can see you're start-ready at a glance. Click **Start tracking**.
 2. **Set the retirement time** (top-right, *“Drop idle units after”*) if 2 hours isn't right for the day — a short incident might want 30 minutes; a long operation might want 8 hours or **Never remove**.
 3. **Send a GPS from a field radio.** That unit appears in the Units table (status **Live**, green) and a firetruck marker drops on the map **at its true location — your view does not move**, so calls from every distance stay where they belong.
 4. **Name a unit:** double-click its row, type the alias (e.g. `9076801 → Jax 24`), Save. The map label updates immediately and the name is remembered.
@@ -75,6 +75,10 @@ The field radios and the base-station relay radio are set up in BK's RES program
 - **Firetruck markers** replace the plain dot — red while live, amber when stale.
 - **Zoom-aware icons** shrink as you zoom out and disappear above **200,000 ft** (`HIDE_ABOVE_FT` in `p25_core.py`), so a wide view isn't buried in markers; units keep tracking while hidden and return when you zoom back in.
 - **Two status lights** — **Radio connected** and **ArcGIS Earth API ready** — show green/red at the top of the panel so link health is one glance away.
+
+### New in v0.6
+
+- **The status lights are larger and run before Start.** They light up the moment the app opens (a read-only check that the radio port answers and the ArcGIS Earth API is on — no subscribe, no traffic) and refresh every couple of seconds, so a glance tells you whether you're start-ready without pressing anything.
 
 ## Field-proven
 
