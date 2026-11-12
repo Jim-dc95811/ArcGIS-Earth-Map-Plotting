@@ -27,6 +27,25 @@
 
 ---
 
+## 🧭 NEW — Garmin USB GPS Tracker: your own position, live on your offline map
+
+Plug in a **Garmin USB GPS** (GPS 18 USB and kin) and plot **your own live position** on your offline ArcGIS Earth map — **no COM port, no NMEA**. A Garmin USB puck speaks Garmin's proprietary *binary* USB protocol through Garmin's own driver; this tool talks that protocol directly, in pure Python, and draws your position as a single marker that follows you. Read-only to the GPS; it never reprograms it.
+
+### **⬇️ [DOWNLOAD GARMIN USB GPS TRACKER v0.1](downloads/Garmin_USB_GPS_Tracker_v0.1.zip)**
+**📖 [Operator guide](docs/GARMIN_USB_GPS_TRACKER.md)** · the PDF user manual is inside the zip, next to the `.bat`.
+**📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools - all 11 in one zip](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
+
+- **No COM port, no NMEA.** It reads the Garmin's binary USB protocol straight through Garmin's existing driver (pure Python, ctypes) — nothing installed or changed on the device, and no other Garmin software is affected.
+- **Your position, once a second.** A blue **“My position”** marker drops where you are and follows you; an optional *Keep me centered* re-centres the map on each fix.
+- **Field-ready.** Two start-ready lights (GPS connected / ArcGIS Earth API ready), a live Fix / lat-lon / accuracy / speed readout, auto-reconnect if the GPS is unplugged, and a daily CSV track log.
+- **Live-proven** on a Garmin GPS 18 USB: 3D fix plotted dead-on the operator's real location on offline imagery.
+
+[![A Garmin GPS 18's live position drawn as a blue "My position" marker on offline ArcGIS Earth imagery](images/garmin_gps_tracker.jpg)](images/garmin_gps_tracker.jpg)
+
+*Your real position, read from the Garmin's binary USB stream and drawn on offline imagery.*
+
+---
+
 ## Get everything you need
 
 **1. ⬇️ [ArcGIS Earth](https://www.esri.com/en-us/arcgis/products/arcgis-earth/downloads)** - free 3D globe from Esri (Windows desktop version); it shows your offline maps and plots the units on them.
@@ -41,7 +60,7 @@
 ### **⬇️ [DOWNLOAD PRAVE / ME TRACKER v2.1](downloads/PRAVE_ME_Tracker_v1.zip)**
 **📖 [User manual](docs/PRAVE_ME_TRACKER.md)**
 **🗂️ [What's in the zip - every file explained](images/prave_me_tracker_whats_in_the_zip_full.png)**
-**📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools - all 10 in one zip](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
+**📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools - all 11 in one zip](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
 
 Track ME and remote PRAVE units directly in ArcGIS Earth through the local Automation API. **2.1:** if ArcGIS Earth is closed or restarted, every unit comes straight back on the map when it returns; a wrong or busy COM port is explained in plain words (with the ports this PC has); logs start a new file each day; a unit quiet for 5 minutes shows its age in its label (`7-101 · 12 min`) ([2.1 changes](docs/PRAVE_ME_TRACKER_V2.1_CHANGES.md)). v1.1 fixed the launchers and keeps units on the map through a serial reconnect; v1.2 keeps a Windows proxy setting from blocking the connection to ArcGIS Earth; v1.2.1's launcher installs pyserial by itself; v1.2.2 is a tidier folder - `START_TRACKER.bat` plus `System Files` ([changes](docs/PRAVE_ME_TRACKER_V1.1_CHANGES.md)). **v1.2.3 (Ready to Fly):** `START_TRACKER.bat` finds Python or installs it for you (no admin - answer **Y**), installs pyserial if missing, starts ArcGIS Earth if it is not open and checks its Automation API; the tracker is unchanged.
 
