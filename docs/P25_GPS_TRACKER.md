@@ -10,7 +10,7 @@ Live GPS from BK P25 radios, plotted as named units on your own offline ArcGIS E
 
 ## Installing — read this first
 
-1. **Extract the zip** (right-click → **Extract All**), then open the new `P25_GPS_Tracker_v0.8` folder. Double-clicking files inside the zip does not work.
+1. **Extract the zip** (right-click → **Extract All**), then open the new `P25_GPS_Tracker_v0.9` folder. Double-clicking files inside the zip does not work.
 2. **Python 3** is required (the standard [python.org](https://www.python.org/downloads/windows/) installer, which includes Tk for the window). Tick **“Add python.exe to PATH”** during setup. No other libraries are needed.
 3. **Dependency — ArcGIS Earth with the Automation API on:** ArcGIS Earth → Settings → Advanced application settings → enable **Automation API** (the tracker uses `http://localhost:8000`).
 4. **Dependency — the base radio connected** as the USB **Ethernet/RNDIS Gadget** (it appears at `10.250.46.6`), with Base Station Relay feeding it received GPS.
@@ -82,9 +82,9 @@ The field radios and the base-station relay radio are set up in BK's RES program
 
 ### New in v0.7
 
-- **On-screen badge over ArcGIS Earth.** A small **P25 TRACKER · running** badge pins to the bottom-right of the ArcGIS Earth window, above the Esri logo, and stays there the whole time the tracker runs — so if it ever disappears, you know the program stopped (even if you were looking at the map, not the panel). It's click-through, so it never blocks the map.
+- **On-screen badge over ArcGIS Earth.** A small **P25 TRACKER · running** badge pins to the bottom-right of the screen, above the Esri logo of a full-screen ArcGIS Earth, and stays there the whole time the tracker runs — so if it ever disappears, you know the program stopped (even if you were looking at the map, not the panel). It's click-through, so it never blocks the map.
 - **RADIO DISCONNECTED alarm.** While tracking, if the radio link drops, a red **RADIO DISCONNECTED** banner blinks just above the badge until the radio comes back.
-- The badge only appears when ArcGIS Earth is open, and like EarthStick's readout it fails safe — if the overlay can't draw on your setup, the tracker runs exactly as before. (v0.8 finds ArcGIS Earth by its window **title** only — it never inspects other processes.)
+- The badge anchors to the screen corner (it assumes ArcGIS Earth is maximised, which is how these tools are used), and like EarthStick's readout it fails safe — if the overlay can't draw on your setup, the tracker runs exactly as before. (v0.9 pins to the screen's bottom-right corner — no window or process lookup at all; v0.8's title match failed because ArcGIS Earth names its window after the open workspace, e.g. *Legacy Workspace*.)
 
 ## Field-proven
 
