@@ -14,7 +14,9 @@
 
 *How a P25 radio's GPS reaches the map. ▶️ [Watch it work — BK Radio P25 GPS Map Plotter](https://www.youtube.com/watch?v=AapMfnJY7z0) (YouTube).*
 
-### **⬇️ [DOWNLOAD P25 GPS TRACKER v0.14](downloads/P25_GPS_Tracker_v0.14.zip)**
+### **⭐ [Get P25 GPS Tracker from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)**
+
+*Open the Drive folder, open **P25_GPS_Tracker_v0.14**, and run its one `.bat`. This tool reads radio/GPS hardware, so it is offered on Drive only - a brand-new unsigned zip can trip a Windows antivirus false alarm, and Drive avoids that entirely.*
 **▶️ [Watch the demo — BK Radio P25 GPS Map Plotter (YouTube)](https://www.youtube.com/watch?v=AapMfnJY7z0)** · **[60-sec Short](https://www.youtube.com/shorts/X2DJc22vsnw)**
 **📖 [Operator guide](docs/P25_GPS_TRACKER.md)**
 **🔒 [Security summary for IT (PDF)](docs/P25_GPS_Tracker_Security_Summary.pdf)**
@@ -40,7 +42,9 @@
 
 Plug in a **Garmin USB GPS** (GPS 18 USB and kin) and plot **your own live position** on your offline ArcGIS Earth map — **no COM port, no NMEA**. A Garmin USB puck speaks Garmin's proprietary *binary* USB protocol through Garmin's own driver; this tool talks that protocol directly, in pure Python, and draws your position as a single marker that follows you. Read-only to the GPS; it never reprograms it.
 
-### **⬇️ [DOWNLOAD GARMIN USB GPS TRACKER v0.1](downloads/Garmin_USB_GPS_Tracker_v0.1.zip)**
+### **⭐ [Get Garmin USB GPS Tracker from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)**
+
+*Open the Drive folder, open **Garmin_USB_GPS_Tracker_v0.1**, and run its one `.bat`. This tool reads radio/GPS hardware, so it is offered on Drive only - a brand-new unsigned zip can trip a Windows antivirus false alarm, and Drive avoids that entirely.*
 **📖 [Operator guide](docs/GARMIN_USB_GPS_TRACKER.md)** · the PDF user manual is inside the zip, next to the `.bat`.
 **⭐ EASIEST WAY — [Get all 11 tools from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)** — no download warnings, the whole series is under 10 MB. Open the folder, open the tool you want, and run its one `.bat`.
 
@@ -68,7 +72,9 @@ Plug in a **Garmin USB GPS** (GPS 18 USB and kin) and plot **your own live posit
 > 2. **Windows security warning:** Windows may warn about any program downloaded from the internet. Click **More info > Run anyway** (blue "Windows protected your PC" screen) or **Run**. To avoid the warning, right-click the zip > **Properties** > tick **Unblock** > **OK** before extracting.
 > 3. **Installing Python:** if the installer shows **"Add python.exe to PATH"**, tick it.
 
-### **⬇️ [DOWNLOAD PRAVE / ME TRACKER v2.1](downloads/PRAVE_ME_Tracker_v1.zip)**
+### **⭐ [Get PRAVE / ME Tracker from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)**
+
+*Easiest, no download warning: open the Drive folder, open **PRAVE_ME_Tracker_v2.1**, and run its one `.bat`. Prefer GitHub? Developers can grab the [direct zip](downloads/PRAVE_ME_Tracker_v1.zip) - a direct download can trip a Windows antivirus false alarm, which Drive avoids.*
 **📖 [User manual](docs/PRAVE_ME_TRACKER.md)**
 **🗂️ [What's in the zip - every file explained](images/prave_me_tracker_whats_in_the_zip_full.png)**
 **⭐ EASIEST WAY — [Get all 11 tools from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)** — no download warnings, the whole series is under 10 MB. Open the folder, open the tool you want, and run its one `.bat`.
@@ -77,13 +83,15 @@ Plug in a **Garmin USB GPS** (GPS 18 USB and kin) and plot **your own live posit
 
 Track ME and remote PRAVE units directly in ArcGIS Earth through the local Automation API. **2.1:** if ArcGIS Earth is closed or restarted, every unit comes straight back on the map when it returns; a wrong or busy COM port is explained in plain words (with the ports this PC has); logs start a new file each day; a unit quiet for 5 minutes shows its age in its label (`7-101 · 12 min`) ([2.1 changes](docs/PRAVE_ME_TRACKER_V2.1_CHANGES.md)). v1.1 fixed the launchers and keeps units on the map through a serial reconnect; v1.2 keeps a Windows proxy setting from blocking the connection to ArcGIS Earth; v1.2.1's launcher installs pyserial by itself; v1.2.2 is a tidier folder - `START_TRACKER.bat` plus `System Files` ([changes](docs/PRAVE_ME_TRACKER_V1.1_CHANGES.md)). **v1.2.3 (Ready to Fly):** `START_TRACKER.bat` finds Python or installs it for you (no admin - answer **Y**), installs pyserial if missing, starts ArcGIS Earth if it is not open and checks its Automation API; the tracker is unchanged.
 
-> **Trifecta — ME + Raveon fleet + P25 on one map.** The P25 feed folds into this tracker as a third source, so ME, the Raveon `$PRAVE` fleet, and the P25 radios share one map and one ArcGIS Earth API owner. **⬇️ [Download PRAVE / ME / P25 Tracker v3.0](downloads/PRAVE_ME_Tracker_v3.0.zip)** — new bench build (passes its self-test and real-capture tests; full field test with live radios still pending).
+> **Trifecta — ME + Raveon fleet + P25 on one map.** The P25 feed folds into this tracker as a third source, so ME, the Raveon `$PRAVE` fleet, and the P25 radios share one map and one ArcGIS Earth API owner. **⬇️ [Download PRAVE / ME / P25 Tracker v3.0](downloads/PRAVE_ME_Tracker_v3.0.zip)** (bench build, GitHub only; a direct download may trip a Windows antivirus false alarm) — new bench build (passes its self-test and real-capture tests; full field test with live radios still pending).
 
 [![PRAVE / ME tracker in ArcGIS Earth: the ME marker and remote unit 1-173 drawn live over satellite imagery](images/prave_me_tracker_arcgis_earth.jpg)](https://www.youtube.com/watch?v=JKWJmEIBP_I)
 
 *ME (blue marker) and remote unit 1-173 drawn live in ArcGIS Earth. ▶️ [Watch the video](https://www.youtube.com/watch?v=JKWJmEIBP_I) (YouTube).*
 
-### **⬇️ [DOWNLOAD PRAVE / RMC FIELD DECODER TESTER v1.0 GOLD](downloads/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.zip)**
+### **⬇️ [Download PRAVE / RMC Field Decoder Tester v1.0 Gold](downloads/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold.zip)**
+
+*Bench companion for the PRAVE / ME tracker, GitHub only. A direct download can trip an over-eager Windows antivirus false alarm; if you trust it, click More info > Run anyway.*
 **📖 [User manual (PDF)](docs/PRAVE_RMC_Field_Decoder_Tester_v1_0_Gold_Instructions.pdf)**
 **🗂️ [What's in the zip - every file explained](images/prave_rmc_tester_whats_in_the_zip_full.png)**
 
