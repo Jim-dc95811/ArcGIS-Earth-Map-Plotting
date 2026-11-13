@@ -14,7 +14,7 @@
 
 *How a P25 radio's GPS reaches the map. ▶️ [Watch it work — BK Radio P25 GPS Map Plotter](https://www.youtube.com/watch?v=AapMfnJY7z0) (YouTube).*
 
-### **⭐ [Get P25 GPS Tracker from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)**
+### **⭐ [Get P25 GPS Tracker from Google Drive](https://drive.google.com/drive/folders/1xNnCdhlnejT-6J3XOPTHB_LWHxO2WaBh)**
 
 *Open the Drive folder, open **P25_GPS_Tracker_v0.14**, and run its one `.bat`. This tool reads radio/GPS hardware, so it is offered on Drive only - a brand-new unsigned zip can trip a Windows antivirus false alarm, and Drive avoids that entirely.*
 **▶️ [Watch the demo — BK Radio P25 GPS Map Plotter (YouTube)](https://www.youtube.com/watch?v=AapMfnJY7z0)** · **[60-sec Short](https://www.youtube.com/shorts/X2DJc22vsnw)**
@@ -42,7 +42,7 @@
 
 Plug in a **Garmin USB GPS** (GPS 18 USB and kin) and plot **your own live position** on your offline ArcGIS Earth map — **no COM port, no NMEA**. A Garmin USB puck speaks Garmin's proprietary *binary* USB protocol through Garmin's own driver; this tool talks that protocol directly, in pure Python, and draws your position as a single marker that follows you. Read-only to the GPS; it never reprograms it.
 
-### **⭐ [Get Garmin USB GPS Tracker from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)**
+### **⭐ [Get Garmin USB GPS Tracker from Google Drive](https://drive.google.com/drive/folders/1eYV6wqTzXPDxxKBm87gj7J_q7345LffF)**
 
 *Open the Drive folder, open **Garmin_USB_GPS_Tracker_v0.1**, and run its one `.bat`. This tool reads radio/GPS hardware, so it is offered on Drive only - a brand-new unsigned zip can trip a Windows antivirus false alarm, and Drive avoids that entirely.*
 **📖 [Operator guide](docs/GARMIN_USB_GPS_TRACKER.md)** · the PDF user manual is inside the zip, next to the `.bat`.
@@ -72,7 +72,7 @@ Plug in a **Garmin USB GPS** (GPS 18 USB and kin) and plot **your own live posit
 > 2. **Windows security warning:** Windows may warn about any program downloaded from the internet. Click **More info > Run anyway** (blue "Windows protected your PC" screen) or **Run**. To avoid the warning, right-click the zip > **Properties** > tick **Unblock** > **OK** before extracting.
 > 3. **Installing Python:** if the installer shows **"Add python.exe to PATH"**, tick it.
 
-### **⭐ [Get PRAVE / ME Tracker from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)**
+### **⭐ [Get PRAVE / ME Tracker from Google Drive](https://drive.google.com/drive/folders/1Ffq0BjsU9AIZZCgz7ixhIdHVH1jUS7NY)**
 
 *Easiest, no download warning: open the Drive folder, open **PRAVE_ME_Tracker_v2.1**, and run its one `.bat`. Prefer GitHub? Developers can grab the [direct zip](downloads/PRAVE_ME_Tracker_v1.zip) - a direct download can trip a Windows antivirus false alarm, which Drive avoids.*
 **📖 [User manual](docs/PRAVE_ME_TRACKER.md)**
