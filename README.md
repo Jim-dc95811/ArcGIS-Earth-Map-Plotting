@@ -20,7 +20,7 @@
 **🔒 [Security summary for IT (PDF)](docs/P25_GPS_Tracker_Security_Summary.pdf)**
 **⭐ EASIEST WAY — [Get all 11 tools from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)** — no download warnings, the whole series is under 10 MB. Open the folder, open the tool you want, and run its one `.bat`.
 
-**📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
+*Prefer GitHub, or want the source? Developers can grab the [direct zip of all 11 tools](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip). Note: a direct download can trip an over-eager Windows antivirus false alarm - the Google Drive folder above avoids it.*
 
 ![Jax 24, a BK P25 radio unit, and a blue My position marker on the same offline ArcGIS Earth satellite imagery, with the P25 Tracker status badge in the corner](images/p25_live_jax24_my_position.jpg)
 
@@ -44,7 +44,7 @@ Plug in a **Garmin USB GPS** (GPS 18 USB and kin) and plot **your own live posit
 **📖 [Operator guide](docs/GARMIN_USB_GPS_TRACKER.md)** · the PDF user manual is inside the zip, next to the `.bat`.
 **⭐ EASIEST WAY — [Get all 11 tools from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)** — no download warnings, the whole series is under 10 MB. Open the folder, open the tool you want, and run its one `.bat`.
 
-**📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools - all 11 in one zip](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
+*Prefer GitHub, or want the source? Developers can grab the [direct zip of all 11 tools](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip). Note: a direct download can trip an over-eager Windows antivirus false alarm - the Google Drive folder above avoids it.*
 
 - **No COM port, no NMEA.** It reads the Garmin's binary USB protocol straight through Garmin's existing driver (pure Python, ctypes) — nothing installed or changed on the device, and no other Garmin software is affected.
 - **Your position, once a second.** A blue **“My position”** marker drops where you are and follows you; an optional *Keep me centered* re-centres the map on each fix.
@@ -73,7 +73,7 @@ Plug in a **Garmin USB GPS** (GPS 18 USB and kin) and plot **your own live posit
 **🗂️ [What's in the zip - every file explained](images/prave_me_tracker_whats_in_the_zip_full.png)**
 **⭐ EASIEST WAY — [Get all 11 tools from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)** — no download warnings, the whole series is under 10 MB. Open the folder, open the tool you want, and run its one `.bat`.
 
-**📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools - all 11 in one zip](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
+*Prefer GitHub, or want the source? Developers can grab the [direct zip of all 11 tools](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip). Note: a direct download can trip an over-eager Windows antivirus false alarm - the Google Drive folder above avoids it.*
 
 Track ME and remote PRAVE units directly in ArcGIS Earth through the local Automation API. **2.1:** if ArcGIS Earth is closed or restarted, every unit comes straight back on the map when it returns; a wrong or busy COM port is explained in plain words (with the ports this PC has); logs start a new file each day; a unit quiet for 5 minutes shows its age in its label (`7-101 · 12 min`) ([2.1 changes](docs/PRAVE_ME_TRACKER_V2.1_CHANGES.md)). v1.1 fixed the launchers and keeps units on the map through a serial reconnect; v1.2 keeps a Windows proxy setting from blocking the connection to ArcGIS Earth; v1.2.1's launcher installs pyserial by itself; v1.2.2 is a tidier folder - `START_TRACKER.bat` plus `System Files` ([changes](docs/PRAVE_ME_TRACKER_V1.1_CHANGES.md)). **v1.2.3 (Ready to Fly):** `START_TRACKER.bat` finds Python or installs it for you (no admin - answer **Y**), installs pyserial if missing, starts ArcGIS Earth if it is not open and checks its Automation API; the tracker is unchanged.
 
