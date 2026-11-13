@@ -12,7 +12,7 @@
 
 *How a P25 radio's GPS reaches the map. ▶️ [Watch it work — BK Radio P25 GPS Map Plotter](https://www.youtube.com/watch?v=AapMfnJY7z0) (YouTube).*
 
-### **⬇️ [DOWNLOAD P25 GPS TRACKER v0.12](downloads/P25_GPS_Tracker_v0.12.zip)**
+### **⬇️ [DOWNLOAD P25 GPS TRACKER v0.13](downloads/P25_GPS_Tracker_v0.13.zip)**
 **▶️ [Watch the demo — BK Radio P25 GPS Map Plotter (YouTube)](https://www.youtube.com/watch?v=AapMfnJY7z0)** · **[60-sec Short](https://www.youtube.com/shorts/X2DJc22vsnw)**
 **📖 [Operator guide](docs/P25_GPS_TRACKER.md)**
 **🔒 [Security summary for IT (PDF)](docs/P25_GPS_Tracker_Security_Summary.pdf)**
@@ -22,6 +22,7 @@
 - **Live-tested on real radios.** Two portables reporting through a base M150 relay plotted as two separate, named, correctly-separated units on offline imagery — pinpoint accurate.
 - **Built for the field.** Live / Stale / Expired aging (amber marker + age label), a pick-your-own retirement time (30 minutes to Never), keepalive + auto-reconnect, coordinate sanity, and a daily CSV track log.
 - **How it works:** the base radio, connected as a USB Ethernet/RNDIS gadget, relays each received fix as standard NMEA — a `$GNGGA` position plus a proprietary `$PP25` unit-ID sentence — which the tracker reads and draws through ArcGIS Earth's local Automation API. Nothing is decrypted; it is standard interoperability with your own equipment on your own licensed channels.
+- **Your own position too (v0.13).** Plug a Garmin USB GPS into the same PC and the tracker plots **where you are** as a blue **My position** marker, right alongside the radio units — a third "GPS connected" light, a **GPS DISCONNECTED** alarm, and a **Keep me centered** toggle you can switch on and off live. Every source — radio, Garmin, ArcGIS Earth — connects on its own; any one, any two, or none can be absent and the program keeps running.
 
 > The standalone tracker above is the proven, everyday tool most operators will use. If you also run a Raveon fleet, the same P25 feed folds into the **PRAVE / ME Tracker** as a third source — see the *trifecta* build under that tool below.
 

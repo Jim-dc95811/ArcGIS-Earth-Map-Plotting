@@ -10,7 +10,7 @@ Live GPS from BK P25 radios, plotted as named units on your own offline ArcGIS E
 
 ## Installing — read this first
 
-1. **Extract the zip** (right-click → **Extract All**), then open the new `P25_GPS_Tracker_v0.12` folder. Double-clicking files inside the zip does not work.
+1. **Extract the zip** (right-click → **Extract All**), then open the new `P25_GPS_Tracker_v0.13` folder. Double-clicking files inside the zip does not work.
 2. **Python 3** is required (the standard [python.org](https://www.python.org/downloads/windows/) installer, which includes Tk for the window). Tick **“Add python.exe to PATH”** during setup. No other libraries are needed.
 3. **Dependency — ArcGIS Earth with the Automation API on:** ArcGIS Earth → Settings → Advanced application settings → enable **Automation API** (the tracker uses `http://localhost:8000`).
 4. **Dependency — the base radio connected** as the USB **Ethernet/RNDIS Gadget** (it appears at `10.250.46.6`), with Base Station Relay feeding it received GPS.
@@ -85,6 +85,14 @@ The field radios and the base-station relay radio are set up in BK's RES program
 - **On-screen badge over ArcGIS Earth.** A small **P25 TRACKER · running** badge pins to the bottom-right of the screen, above the Esri logo of a full-screen ArcGIS Earth, and stays there the whole time the tracker runs — so if it ever disappears, you know the program stopped (even if you were looking at the map, not the panel). It's click-through, so it never blocks the map.
 - **RADIO DISCONNECTED alarm.** While tracking, if the radio link drops, a red **RADIO DISCONNECTED** banner blinks just above the badge until the radio comes back.
 - The badge anchors to the screen corner (it assumes ArcGIS Earth is maximised, which is how these tools are used), and like EarthStick's readout it fails safe — if the overlay can't draw on your setup, the tracker runs exactly as before. (v0.9 pins to the screen's bottom-right corner — no window or process lookup at all; v0.8's title match failed because ArcGIS Earth names its window after the open workspace, e.g. *Legacy Workspace*.)
+
+### New in v0.13
+
+- **Your own position, from a Garmin USB GPS.** Plug a Garmin USB GPS (e.g. a GPS 18 USB) into the same PC and the tracker plots **where you are** as a blue **My position** marker, right alongside the radio units — no COM port, no NMEA setup, it reads Garmin's own USB binary mode directly.
+- **Third status light — "GPS connected"** — next to the Radio and ArcGIS Earth lights, so you can see at a glance that your own GPS is reporting.
+- **"GPS DISCONNECTED" alarm.** While tracking, if the GPS link drops, a red **GPS DISCONNECTED** banner blinks on the on-screen badge, just above the radio alarm.
+- **"Keep me centered."** Tick this in the window and the map follows your own position on every fix; untick it and the map holds still. **You can turn it on and off live, while tracking** — the change takes effect on the very next fix, no need to stop and restart.
+- **Every source is independent.** The radio feed, the Garmin GPS and the ArcGIS Earth link each connect on their own; any one, any two, or none can be absent and the program keeps running with whatever is reporting.
 
 ## Field-proven
 
