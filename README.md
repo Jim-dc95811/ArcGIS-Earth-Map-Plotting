@@ -14,7 +14,7 @@
 
 *How a P25 radio's GPS reaches the map. ▶️ [Watch it work — BK Radio P25 GPS Map Plotter](https://www.youtube.com/watch?v=AapMfnJY7z0) (YouTube).*
 
-### **⬇️ [DOWNLOAD P25 GPS TRACKER v0.13](downloads/P25_GPS_Tracker_v0.13.zip)**
+### **⬇️ [DOWNLOAD P25 GPS TRACKER v0.14](downloads/P25_GPS_Tracker_v0.14.zip)**
 **▶️ [Watch the demo — BK Radio P25 GPS Map Plotter (YouTube)](https://www.youtube.com/watch?v=AapMfnJY7z0)** · **[60-sec Short](https://www.youtube.com/shorts/X2DJc22vsnw)**
 **📖 [Operator guide](docs/P25_GPS_TRACKER.md)**
 **🔒 [Security summary for IT (PDF)](docs/P25_GPS_Tracker_Security_Summary.pdf)**

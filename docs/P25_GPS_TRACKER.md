@@ -10,7 +10,7 @@ Live GPS from BK P25 radios, plotted as named units on your own offline ArcGIS E
 
 ## Installing — read this first
 
-1. **Extract the zip** (right-click → **Extract All**), then open the new `P25_GPS_Tracker_v0.13` folder. Double-clicking files inside the zip does not work.
+1. **Extract the zip** (right-click → **Extract All**), then open the new `P25_GPS_Tracker_v0.14` folder. Double-clicking files inside the zip does not work.
 2. **Python 3** is required (the standard [python.org](https://www.python.org/downloads/windows/) installer, which includes Tk for the window). Tick **“Add python.exe to PATH”** during setup. No other libraries are needed.
 3. **Dependency — ArcGIS Earth with the Automation API on:** ArcGIS Earth → Settings → Advanced application settings → enable **Automation API** (the tracker uses `http://localhost:8000`).
 4. **Dependency — the base radio connected** as the USB **Ethernet/RNDIS Gadget** (it appears at `10.250.46.6`), with Base Station Relay feeding it received GPS.
@@ -94,9 +94,16 @@ The field radios and the base-station relay radio are set up in BK's RES program
 - **"Keep me centered."** Tick this in the window and the map follows your own position on every fix; untick it and the map holds still. **You can turn it on and off live, while tracking** — the change takes effect on the very next fix, no need to stop and restart.
 - **Every source is independent.** The radio feed, the Garmin GPS and the ArcGIS Earth link each connect on their own; any one, any two, or none can be absent and the program keeps running with whatever is reporting.
 
+### New in v0.14
+
+Hardening of the Garmin (own-position) side — the radio tracking is unchanged:
+
+- **Honest GPS status.** If the Garmin is plugged in but stops getting a fix (indoors, lost lock, a USB hiccup), the **GPS connected** light now turns red and the **GPS DISCONNECTED** alarm blinks after about 12 seconds — so a frozen position never looks live. It clears on its own the moment a good fix returns, and a normal cold-start lock won't false-alarm.
+- **Bad readings ignored.** A corrupt GPS reading (out-of-range or null coordinates) is dropped, so it can never jump your blue marker or, with *Keep me centered* on, the map.
+
 ## Field-proven
 
-Live-tested on real BK radios: two portables reporting through a base M150 relay appeared as two separate, correctly-separated, named units on offline imagery, with live aging and adjustable retirement — pinpoint accurate.
+Live-tested on real BK radios: two portables reporting through a base M150 relay appeared as two separate, correctly-separated, named units on offline imagery, with live aging and adjustable retirement — pinpoint accurate. The v0.14 integrated build (P25 + Garmin own-position together) was field-tested successfully on 2026-11-13.
 
 ## One map with ME and the Raveon fleet (trifecta — in testing)
 
