@@ -10,7 +10,7 @@ Your own live position, straight from a **Garmin USB GPS** (GPS 18 USB and kin),
 
 ## Installing — read this first
 
-1. **Extract the zip** (right-click → **Extract All**), then open the new `Garmin_USB_GPS_Tracker_v0.1` folder. Double-clicking files inside the zip does not work.
+1. **Open the tool's folder.** Easiest is **Google Drive** (the link at the top of the project page): the `Garmin_USB_GPS_Tracker_v0.1` folder is already unpacked — just open it, nothing to extract. If you downloaded the **zip** from GitHub instead, right-click it → **Extract All** first, then open the new folder. Double-clicking files while they are still inside a zip does not work.
 2. **Python 3** is required (the standard [python.org](https://www.python.org/downloads/windows/) installer, which includes Tk for the window). Tick **“Add python.exe to PATH”**. No other libraries.
 3. **Dependency — a Garmin USB GPS** plugged in, with Garmin's USB driver installed (it appears in Device Manager under **GARMIN Devices**). Close any other Garmin program (Garmin Express, BaseCamp, an old GPS app) — only one program can hold the GPS at a time.
 4. **Dependency — ArcGIS Earth with the Automation API on:** ArcGIS Earth → Settings → Advanced application settings → enable **Automation API** (uses `http://localhost:8000`).

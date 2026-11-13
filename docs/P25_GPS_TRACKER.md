@@ -14,7 +14,7 @@ Live GPS from BK P25 radios, plotted as named units on your own offline ArcGIS E
 
 ## Installing — read this first
 
-1. **Extract the zip** (right-click → **Extract All**), then open the new `P25_GPS_Tracker_v0.14` folder. Double-clicking files inside the zip does not work.
+1. **Open the tool's folder.** Easiest is **Google Drive** (the link at the top of the project page): the `P25_GPS_Tracker_v0.14` folder is already unpacked — just open it, nothing to extract. If you downloaded the **zip** from GitHub instead, right-click it → **Extract All** first, then open the new folder. Double-clicking files while they are still inside a zip does not work.
 2. **Python 3** is required (the standard [python.org](https://www.python.org/downloads/windows/) installer, which includes Tk for the window). Tick **“Add python.exe to PATH”** during setup. No other libraries are needed.
 3. **Dependency — ArcGIS Earth with the Automation API on:** ArcGIS Earth → Settings → Advanced application settings → enable **Automation API** (the tracker uses `http://localhost:8000`).
 4. **Dependency — the base radio connected** as the USB **Ethernet/RNDIS Gadget** (it appears at `10.250.46.6`), with Base Station Relay feeding it received GPS.
