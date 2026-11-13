@@ -22,6 +22,10 @@
 
 **📦 [Download the Whole ArcGIS Earth Unlocked Series of Tools](https://github.com/Jim-dc95811/ArcGIS-Earth-Unlocked/raw/main/downloads/ArcGIS_Earth_Unlocked_All_Tools.zip)**
 
+![Jax 24, a BK P25 radio unit, and a blue My position marker on the same offline ArcGIS Earth satellite imagery, with the P25 Tracker status badge in the corner](images/p25_live_jax24_my_position.jpg)
+
+*Field-proven: **Jax 24** (a BK P25 portable, plotted by its unit ID) and **My position** (a Garmin USB GPS) on one offline map — the radio unit and the operator together, with the on-screen P25 Tracker badge top-right.*
+
 - **One marker per unit, by name.** The sending radio's P25 unit ID is the key; name it once (`9076801 → Jax 24`) and it sticks across sessions. An un-named unit still shows its raw ID, so no dot is ever a mystery.
 - **Live-tested on real radios.** Two portables reporting through a base M150 relay plotted as two separate, named, correctly-separated units on offline imagery — pinpoint accurate.
 - **Built for the field.** Live / Stale / Expired aging (amber marker + age label), a pick-your-own retirement time (30 minutes to Never), keepalive + auto-reconnect, coordinate sanity, and a daily CSV track log.

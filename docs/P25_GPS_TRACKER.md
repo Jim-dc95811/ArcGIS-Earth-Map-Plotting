@@ -6,6 +6,10 @@ Live GPS from BK P25 radios, plotted as named units on your own offline ArcGIS E
 
 ![How a field radio's GPS reaches the map](../images/p25_gps_tracker_pictogram.png)
 
+![Jax 24, a BK P25 radio unit, and a blue My position marker on the same offline ArcGIS Earth satellite imagery, with the P25 Tracker status badge in the corner](../images/p25_live_jax24_my_position.jpg)
+
+*Field-proven: **Jax 24** (a radio unit, plotted by its P25 unit ID) and **My position** (a Garmin USB GPS) on the same offline map — the radio unit and the operator together, with the on-screen P25 Tracker badge top-right.*
+
 ---
 
 ## Installing — read this first
