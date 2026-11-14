@@ -17,7 +17,7 @@
 ### **⭐ [Get P25 GPS Tracker from Google Drive](https://drive.google.com/drive/folders/1xNnCdhlnejT-6J3XOPTHB_LWHxO2WaBh)**
 
 *Open the Drive folder, open **P25_GPS_Tracker_v0.14**, and run its one `.bat`. This tool reads radio/GPS hardware, so it is offered on Drive only - a brand-new unsigned zip can trip a Windows antivirus false alarm, and Drive avoids that entirely.*
-**▶️ [Watch the demo — BK Radio P25 GPS Map Plotter (YouTube)](https://www.youtube.com/watch?v=AapMfnJY7z0)** · **[60-sec Short](https://www.youtube.com/shorts/X2DJc22vsnw)**
+**▶️ [Watch the demo — BK Radio P25 GPS Map Plotter (YouTube)](https://www.youtube.com/watch?v=AapMfnJY7z0)** · **[System setup walkthrough](https://www.youtube.com/watch?v=RekHyZVvB6c)** · **[60-sec Short](https://www.youtube.com/shorts/X2DJc22vsnw)**
 **📖 [Operator guide](docs/P25_GPS_TRACKER.md)**
 **🔒 [Security summary for IT (PDF)](docs/P25_GPS_Tracker_Security_Summary.pdf)**
 **⭐ EASIEST WAY — [Get all 11 tools from Google Drive](https://drive.google.com/drive/folders/1jsxVTDsYdgJHibhCCeI9I69FsG0qMGgc?usp=sharing)** — no download warnings, the whole series is under 10 MB. Open the folder, open the tool you want, and run its one `.bat`.
@@ -117,9 +117,9 @@ Load your TPKX maps into ArcGIS Earth, start a tracker here, and the units draw 
 
 | | |
 |---|---|
-| [![BK Radio P25 GPS Map Plotter](https://img.youtube.com/vi/AapMfnJY7z0/hqdefault.jpg)](https://www.youtube.com/watch?v=AapMfnJY7z0)<br>**BK Radio P25 GPS Map Plotter** — radio GPS live on the offline map | [![Key a radio, watch it hit the map — live](https://img.youtube.com/vi/X2DJc22vsnw/hqdefault.jpg)](https://www.youtube.com/shorts/X2DJc22vsnw)<br>**Key a radio, watch it hit the map — live** (Short) |
-| [![ArcGIS Earth Offline Georeferenced Chart Plotting](https://img.youtube.com/vi/JKWJmEIBP_I/hqdefault.jpg)](https://www.youtube.com/watch?v=JKWJmEIBP_I)<br>**ArcGIS Earth Offline Georeferenced Chart Plotting** | [![Pre-Loaded Satellite Maps for First Responders](https://img.youtube.com/vi/xPA3QfAW4aY/hqdefault.jpg)](https://www.youtube.com/watch?v=xPA3QfAW4aY)<br>**Pre-Loaded Satellite Maps for First Responders** |
-| [![Android Offline ArcGIS Earth](https://img.youtube.com/vi/uL69NTVnafE/hqdefault.jpg)](https://www.youtube.com/watch?v=uL69NTVnafE)<br>**Transforming an Android Phone into an ArcGIS Earth Map Viewer** | |
+| [![BK Radio P25 GPS Map Plotter](https://img.youtube.com/vi/AapMfnJY7z0/hqdefault.jpg)](https://www.youtube.com/watch?v=AapMfnJY7z0)<br>**BK Radio P25 GPS Map Plotter** — radio GPS live on the offline map | [![BK Radio P25 GPS AVL System Setup](https://img.youtube.com/vi/RekHyZVvB6c/hqdefault.jpg)](https://www.youtube.com/watch?v=RekHyZVvB6c)<br>**BK Radio P25 GPS AVL System Setup** — the field rig, end to end |
+| [![Key a radio, watch it hit the map — live](https://img.youtube.com/vi/X2DJc22vsnw/hqdefault.jpg)](https://www.youtube.com/shorts/X2DJc22vsnw)<br>**Key a radio, watch it hit the map — live** (Short) | [![ArcGIS Earth Offline Georeferenced Chart Plotting](https://img.youtube.com/vi/JKWJmEIBP_I/hqdefault.jpg)](https://www.youtube.com/watch?v=JKWJmEIBP_I)<br>**ArcGIS Earth Offline Georeferenced Chart Plotting** |
+| [![Pre-Loaded Satellite Maps for First Responders](https://img.youtube.com/vi/xPA3QfAW4aY/hqdefault.jpg)](https://www.youtube.com/watch?v=xPA3QfAW4aY)<br>**Pre-Loaded Satellite Maps for First Responders** | [![Android Offline ArcGIS Earth](https://img.youtube.com/vi/uL69NTVnafE/hqdefault.jpg)](https://www.youtube.com/watch?v=uL69NTVnafE)<br>**Transforming an Android Phone into an ArcGIS Earth Map Viewer** |
 
 These short videos show ArcGIS Earth as an offline georeferenced chartplotter, why pre-loaded imagery matters when the network is gone, and how Android can become a dedicated offline ArcGIS Earth viewer.
 
